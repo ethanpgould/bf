@@ -13,10 +13,7 @@ def execute(code):
   while code_idx < len(code):
     command = code[code_idx]
 
-    # print code_idx, command
-    # print data_idx, data
-    # print 'bracket_map', bracket_map
-
+    # tell the interpreter how to react to each Brainf*ck command symbol 
     if command == '>':
       if data_idx == len(data) - 1:
         data.append(0)
